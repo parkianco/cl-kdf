@@ -3,7 +3,7 @@
 ;;;;
 ;;;; Tests for cl-kdf
 
-(in-package #:cl-kdf-test)
+(in-package #:cl-kdf.test)
 
 ;;; ============================================================================
 ;;; Test Infrastructure
@@ -205,3 +205,7 @@
   (format t "========================================~%")
 
   (zerop *fail-count*))
+
+(defun run-tests ()
+  "Entry point for ASDF test-op."
+  (run-all-tests))

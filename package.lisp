@@ -29,9 +29,13 @@ Performance: SHA-256 is ~1 MB/s, scrypt is intentionally slow")
    #:+scrypt-default-r+
    #:+scrypt-default-p+
 
+   ;; SHA-512
+   #:sha512
+
    ;; Utilities
    #:hex-to-bytes
-   #:bytes-to-hex))
+   #:bytes-to-hex
+   #:string-to-octets))
 
 (defpackage #:cl-kdf.test
   (:use #:cl #:cl-kdf)
